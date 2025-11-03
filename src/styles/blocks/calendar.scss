@@ -3,7 +3,9 @@
   box-sizing: border-box;
 }
 
-.calerdar {
+
+
+.calendar {
  display: flex;
   flex-wrap: wrap;
   gap: $gap-day;
@@ -19,7 +21,7 @@
   border: 1px solid #000;
   background: $gray;
   display: flex;
-  
+
   align-items: center;
   justify-content: center;
   position: relative;
@@ -33,7 +35,7 @@
   }
 
    @for $i from 1 through 31 {
-  .calendar__day:nth-child(#{$i})::before {
+    &:nth-child(#{$i})::before {
     content: "#{$i}";
     font-family: $font-family-numbers_day;
     font-size: $font-size-numbers_day;
