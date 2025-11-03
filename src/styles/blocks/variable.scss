@@ -1,17 +1,10 @@
 $gray: #eee;
-
-$day-size : 100px;
-
-$days : mon, tue, wed, thu, fri, sat, sun;
-
+$day-size: 100px;
+$days: mon, tue, wed, thu, fri, sat, sun;
 $font-size-numbers_day: 30px;
-
 $font-family-numbers_day: Arial, sans-serif;
-
 $padding-day: 10px;
-
 $gap-day: 1px;
-
 $days-map: (
   mon: 0,
   tue: 1,
@@ -21,4 +14,3 @@ $days-map: (
   sat: 5,
   sun: 6,
 );
-
