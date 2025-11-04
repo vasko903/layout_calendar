@@ -50,7 +50,7 @@
 }
 
     @each $days, $i in $days-map {
-    &--start-day-#{$day} .calendar__day:first-child {
+    &--start-day-#{$days} .calendar__day:first-child {
       margin-left: calc(#{$i} * (#{$day-size} + #{$gap-day}));
     }
     }
