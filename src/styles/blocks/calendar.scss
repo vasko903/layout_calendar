@@ -45,17 +45,20 @@
       }
     }
 
+
+
+}
+
     @each $day, $i in $days-map {
-      .calendar--start-day-#{$day} .calendar__day:first-child {
-        margin-left: calc(#{$i} * (#{$day-size} + #{$gap-day}));
-      }
+    &--start-day-#{$day} .calendar__day:first-child {
+      margin-left: calc(#{$i} * (#{$day-size} + #{$gap-day}));
+    }
     }
 
     @for $len from 28 through 31 {
-      .calendar--month-length-#{$len}
-        .calendar__day:nth-child(n + #{$len + 1}) {
-        display: none;
-      }
+    &--month-length-#{$len} .calendar__day:nth-child(n + #{$len + 1}) {
+      display: none;
     }
-  }
+    }
+
 }
